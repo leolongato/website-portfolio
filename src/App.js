@@ -6,15 +6,13 @@ import GlobalStyle from './Global/GlobalStyle';
 
 function App() {
   return (
-    <div>
-      <body>
+    <>
         <MenuBar />
         <div id="body">
 
         </div>
-      </body>
-      <GlobalStyle />
-    </div>
+        <GlobalStyle />
+    </>
   );
 }
 

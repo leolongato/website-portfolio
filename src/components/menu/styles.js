@@ -2,6 +2,12 @@ import styled from 'styled-components';
 
 export const Container = styled.div`
     width: 100%;
+    #websiteicon {
+        visibility: hidden;
+        width: 0;
+        height: 0;
+    }
+
     #menu-div {
         z-index: 999;
         position: absolute;
@@ -59,9 +65,6 @@ export const Container = styled.div`
         }
 
         .change .bar1 {
-            html {
-                backdrop-filter: blur(4px);
-            }
             -webkit-transform: rotate(-45deg) translate(-8px, 7px);
             transform: rotate(-45deg) translate(-8px, 7px);
         }
@@ -77,8 +80,19 @@ export const Container = styled.div`
             position: relative;
             flex-direction: column;
             align-items: flex-start;
+            justify-content: end;
             padding: 0;
             background: black;
+            #websiteicon {
+                position: absolute;
+                z-index: 999;
+                right: 0;
+                top: 0;
+                visibility: visible;
+                width: auto;
+                margin: 5px;
+                height: 50px;
+            }
             img {
                 visibility: hidden;
                 width: 0;
@@ -120,40 +134,23 @@ export const Container = styled.div`
                 visibility: visible;
                 padding: 0;
             }
-            @keyframes animatein{
-                0% {
-                    height: 0;
-                }
-
-                100% {
-                    height: 240px;
-                }
-            }
-
-            @keyframes animateout {
-                0% {
-                    height: 240px;                
-                }
-
-                100% {
-                    height: 0;
-                }
-            }
             
             .ul-changedin {
                 visibility: visible;
                 opacity: 1;
-                animation: animatein 0.1s linear;
             }
 
             .ul-changedout {
                 visibility: hidden;
                 opacity: 0;
-                animation: animateout 0.1s linear;
             }
 
         }
     }
+
+
+
+
 
     #body-div {
         height: 100%;
@@ -199,6 +196,7 @@ export const Container = styled.div`
                 #social {
                     margin-top: 15px;
                     svg {
+                        cursor: pointer;
                         margin-right: 15px;
                         :hover {
                             color: #0077B5;
@@ -225,6 +223,15 @@ export const Container = styled.div`
                         }
                     }
                 }
+            }
+        }
+
+        @media only screen and (max-width: 615px) {
+            #box{
+                height: 40em;
+            }
+            #codingPic {
+                height: 40em;
             }
         }
     }

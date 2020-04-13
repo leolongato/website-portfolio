@@ -8,13 +8,12 @@ export const Container = styled.div`
     padding: 20px;
     color: gray;
     background: #f8f8fb;
-
+    width: 100%;
     display: grid;
     grid-template-columns: 1fr 0.02fr 3fr;
 
     
     #profilePic {
-        margin-right: 20px;
         border-radius: 50%;
         justify-content: center;
         align-items: center;
@@ -29,6 +28,5 @@ export const Container = styled.div`
     }
 
     #profileContent {
-        margin-left: 20px;
     }
 `;
