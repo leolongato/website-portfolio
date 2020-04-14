@@ -8,6 +8,13 @@ export const Container = styled.div`
         height: 0;
     }
 
+    #topElement {
+        position: absolute;
+        top: 0;
+        width: 0;
+        height: 0;
+    }
+
     #menu-div {
         z-index: 999;
         position: absolute;
@@ -17,13 +24,17 @@ export const Container = styled.div`
         justify-content: center;
 
         ul {
+            background: black;
+            position: fixed;
             display: flex;
             justify-content: center;
             height: auto;
+            border-bottom: 1px solid white;
             width: 100%;
         }
 
         .menubuttons {
+            background: black;
             text-decoration: none;
             font-size: 1em;
             display: flex;
@@ -34,11 +45,10 @@ export const Container = styled.div`
             cursor: pointer;
             height: 100%;
             padding: 15px 30px;
-            border-bottom: 1px solid white;
         }
 
         .menubuttons:hover {
-            opacity: 0.7;
+            background: #303030;
         }
 
 
@@ -77,7 +87,7 @@ export const Container = styled.div`
         }
 
         @media only screen and (max-width: 615px) {
-            position: relative;
+            position: fixed;
             flex-direction: column;
             align-items: flex-start;
             justify-content: end;
@@ -99,7 +109,7 @@ export const Container = styled.div`
                 height: 0;
             }
             ul {
-                background: black;
+                position: relative;
                 visibility: hidden;
                 justify-content: start;
                 z-index: 5;
@@ -112,6 +122,7 @@ export const Container = styled.div`
 
 
                 .menubuttons{
+                    background: black;
                     color: white;
                     border-bottom: 1px solid #D4D4D4;
                     margin-left: 0;
