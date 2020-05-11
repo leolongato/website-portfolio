@@ -12,8 +12,8 @@ export default createGlobalStyle`
 
     html, body, #root {
         height: 100%;
-        font-family: 'Baloo Paaji 2', cursive;
-        /*font-family: 'Roboto', sans-serif;*/
+        /* font-family: 'Baloo Paaji 2', cursive; */
+        font-family: 'Roboto', sans-serif;
         font-size: 18px;
     }
 `;
