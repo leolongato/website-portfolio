@@ -45,7 +45,7 @@ export default function About() {
       <Bounce left>
         <img src={Coding} alt="" />
         <div id="description">
-          <h1>Este site foi feito utilizando React JS com intuito de aprender novas tecnologias e divulgar meu portifolio.</h1>
+          <h1>Este site foi feito utilizando React JS com intuito de aprender novas tecnologias e divulgar meu portfolio.</h1>
           <div id="social">
             <FaLinkedin onTouchStart={() => handleSocialRedirectionMobile("linkedin")} onClick={() => window.open("http://www.linkedin.com/in/leonardo-zoccal-longato-320456148")} size="36"/>
             <FaFacebookSquare onTouchStart={() => handleSocialRedirectionMobile("facebook")} onClick={() => window.open("https://www.facebook.com/leonardo.longato.9")} size="36"/>
