@@ -1,3 +1,5 @@
+Este projeto foi criado como uma forma de aprendizagem e estudo do React JS
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
