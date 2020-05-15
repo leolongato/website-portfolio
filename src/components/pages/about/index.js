@@ -2,7 +2,7 @@ import React from 'react';
 
 import { Container } from './styles';
 import Coding from '../../../assets/coding.png';
-import { FaLinkedin, FaFacebookSquare, FaInstagram} from 'react-icons/fa'
+import { FaGithub, FaLinkedin, FaFacebookSquare, FaInstagram} from 'react-icons/fa'
 import { MdEmail } from 'react-icons/md'
 import Bounce from 'react-reveal/Bounce';
 
@@ -50,6 +50,7 @@ export default function About() {
             <FaLinkedin onTouchStart={() => handleSocialRedirectionMobile("linkedin")} onClick={() => window.open("http://www.linkedin.com/in/leonardo-zoccal-longato-320456148")} size="36"/>
             <FaFacebookSquare onTouchStart={() => handleSocialRedirectionMobile("facebook")} onClick={() => window.open("https://www.facebook.com/leonardo.longato.9")} size="36"/>
             <FaInstagram onTouchStart={() => handleSocialRedirectionMobile("instagram")} onClick={() => window.open("https://www.instagram.com/leolongato")} id="instagram" size="36"/>
+            <FaGithub onClick={() => window.open("https://github.com/leolongato")} size="36"/>
             <MdEmail size="38" onClick={() => window.open("mailto:leonardolongato@gmail.com?&subject=&body=")}/>
           </div>
         </div>

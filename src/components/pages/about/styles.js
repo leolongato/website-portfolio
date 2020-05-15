@@ -42,10 +42,16 @@ export const Container = styled.div`
                     }
                     & + svg {
                     :hover {
-                        background: white;
-                        color:red;
+                        border-radius: 4px;
+                        background: #24292e;
+                        color:white;
                     }
-                }
+                    & + svg {
+                            :hover {
+                                background: white;
+                                color:red;
+                            }
+                    }
                 }
             }
         }
