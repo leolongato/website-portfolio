@@ -33,18 +33,6 @@ export const Container = styled.div`
             background: black;
         }
 
-        li {
-            margin: 3px;
-            list-style-type: none;
-            /* border-bottom: 4px solid black; */
-        }
-
-        li:hover {
-            border-radius: 10px;
-            cursor: pointer;
-            background: rgb(58, 59, 60);
-        }
-
         .tabSelected {
             border-bottom: 3px solid white;
             margin-bottom: 0;
@@ -55,6 +43,7 @@ export const Container = styled.div`
         }
 
         .menubuttons {
+            margin: 3px;
             text-decoration: none;
             font-size: 1em;
             display: flex;
@@ -67,7 +56,11 @@ export const Container = styled.div`
             padding: 15px 30px;
         }
 
-
+        .menubuttons:hover {
+            border-radius: 10px;
+            cursor: pointer;
+            background: rgb(58, 59, 60);
+        }
 
         .container {
             visibility: hidden;

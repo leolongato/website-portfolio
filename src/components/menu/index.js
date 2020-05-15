@@ -35,65 +35,57 @@ export default function MenuBar() {
                     <div className="bar3"></div>
                 </div>
                     <ul id="menu" ref={menuMobile}>
-                        <li>
-                            <Link
-                                    className="menubuttons"
-                                    activeClass="active"
-                                    to="topMenu"
-                                    spy={true}
-                                    smooth={true}
-                                    duration= {500}
-                                    onClick={onTabSelectionClick}
-                                >
-                                <MdHome size="48" className="icons"/>
-                                Principal
-                            </Link>
-                        </li>
-                        <li>
-                            <Link
-                                    className="menubuttons"
-                                    activeClass="active"
-                                    to="skills"
-                                    spy={true}
-                                    smooth={true}
-                                    offset={-100}
-                                    duration= {500}
-                                    onClick={onTabSelectionClick}
-                                >
-                                <MdCode size="48" className="icons"/>
-                                Conhecimentos
-                            </Link>
-                        </li>
-                        <li>
-                            <Link
-                                    className="menubuttons"
-                                    activeClass="active"
-                                    to="experiences"
-                                    spy={true}
-                                    smooth={true}
-                                    offset={-100}
-                                    duration= {500}
-                                    onClick={onTabSelectionClick}
-                                >
-                                <MdAccountCircle size="48" className="icons"/>
-                                Experiências
-                            </Link>
-                        </li>
-                        <li>
-                            <Link
-                                    className="menubuttons"
-                                    activeClass="active"
-                                    to="about"
-                                    spy={true}
-                                    smooth={true}
-                                    offset={-70}
-                                    duration= {500}
-                                    onClick={onTabSelectionClick}
-                                >
-                                <MdInfoOutline size="48" className="icons"/>
-                                Sobre
-                            </Link>
-                        </li>
+                        <Link
+                                className="menubuttons"
+                                activeClass="active"
+                                to="topMenu"
+                                spy={true}
+                                smooth={true}
+                                duration= {500}
+                                onClick={onTabSelectionClick}
+                            >
+                            <MdHome size="48" className="icons"/>
+                            Principal
+                        </Link>
+                        <Link
+                                className="menubuttons"
+                                activeClass="active"
+                                to="skills"
+                                spy={true}
+                                smooth={true}
+                                offset={-100}
+                                duration= {500}
+                                onClick={onTabSelectionClick}
+                            >
+                            <MdCode size="48" className="icons"/>
+                            Conhecimentos
+                        </Link>
+                        <Link
+                                className="menubuttons"
+                                activeClass="active"
+                                to="experiences"
+                                spy={true}
+                                smooth={true}
+                                offset={-100}
+                                duration= {500}
+                                onClick={onTabSelectionClick}
+                            >
+                            <MdAccountCircle size="48" className="icons"/>
+                            Experiências
+                        </Link>
+                        <Link
+                                className="menubuttons"
+                                activeClass="active"
+                                to="about"
+                                spy={true}
+                                smooth={true}
+                                offset={-70}
+                                duration= {500}
+                                onClick={onTabSelectionClick}
+                            >
+                            <MdInfoOutline size="48" className="icons"/>
+                            Sobre
+                        </Link>
                     </ul>
                 <img id="websiteicon" src={WebSiteIcon} alt="" />
             </div>           
