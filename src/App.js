@@ -8,9 +8,6 @@ function App() {
   return (
     <>
         <MenuBar />
-        <div id="body">
-
-        </div>
         <GlobalStyle />
     </>
   );

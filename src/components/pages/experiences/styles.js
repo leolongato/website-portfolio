@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 
 export const Container = styled.div`
+    width: 100%;
     background: #E4E4E4;
     padding: 30px;
     .vertical-timeline-element-title, .vertical-timeline-element-subtitle {

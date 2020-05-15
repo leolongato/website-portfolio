@@ -11,6 +11,7 @@ export default createGlobalStyle`
     }
 
     html, body, #root {
+        overflow-x: hidden;
         height: 100%;
         /* font-family: 'Baloo Paaji 2', cursive; */
         font-family: 'Roboto', sans-serif;
