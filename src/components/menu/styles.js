@@ -1,7 +1,9 @@
 import styled from 'styled-components';
 
 export const Container = styled.div`
+    overflow-x: hidden;
     width: 100%;
+    user-select: none;
     #websiteicon {
         visibility: hidden;
         width: 0;
@@ -132,12 +134,17 @@ export const Container = styled.div`
 
 
                 .menubuttons{
+                    margin: 0;
                     background: black;
                     color: white;
                     border-bottom: 1px solid #D4D4D4;
                     margin-left: 0;
                     flex-direction: row;
                     justify-content: start;
+                }
+
+                .menubuttons:hover {
+                    border-radius: 0;
                 }
 
                 .icons {
