@@ -41,16 +41,17 @@ export const Container = styled.div`
                         background: linear-gradient(45deg, #405DE6, #5851DB, #833AB4, #C13584, #E1306C, #FD1D1D);                        
                     }
                     & + svg {
-                    :hover {
-                        border-radius: 4px;
-                        background: #24292e;
-                        color:white;
-                    }
+                        :hover {
+                            border-radius: 4px;
+                            background: #24292e;
+                            color:white;
+                        }
                     & + svg {
                             :hover {
                                 background: white;
                                 color:red;
                             }
+                        }
                     }
                 }
             }
@@ -63,8 +64,8 @@ export const Container = styled.div`
             height: 250px;
         }
     }
+
     @media only screen and (max-width: 647px) {
         flex-direction: column;
     }
-}
 `;
