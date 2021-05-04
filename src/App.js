@@ -1,5 +1,4 @@
 import React from "react";
-import styled from "styled-components";
 // import MenuBar from "./components/menu/index";
 // import GlobalStyle from "./Global/GlobalStyle";
 
@@ -8,23 +7,23 @@ import styled from "styled-components";
 function App() {
   return (
     // <>
-    <Container>
+    <div>
       <h1>Este site foi descontinuado.</h1>
       <a href="https://leonardolongato.vercel.app">
         Clique aqui para acessar a nova versão.
       </a>
-    </Container>
+    </div>
     //<MenuBar />
     //<GlobalStyle />
     // </>
   );
 }
 
-export const Container = styled.div`
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-`;
+// export const Container = styled.div`
+//   display: flex;
+//   flex-direction: column;
+//   justify-content: center;
+//   align-items: center;
+// `;
 
 export default App;
